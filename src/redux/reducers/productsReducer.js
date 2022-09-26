@@ -1,9 +1,10 @@
-import { SET_ERROR, SET_PRODUCTS } from "../types/productTypes";
+import { SET_CATEGORIES, SET_ERROR, SET_PRODUCTS } from "../types/productTypes";
 
 const initialState = {
   isLoading: false,
   products: [],
   error: "",
+  categories: ["initial"],
 };
 
 export const productsReducer = (state = initialState, action) => {
@@ -17,6 +18,11 @@ export const productsReducer = (state = initialState, action) => {
       return {
         ...state,
         error: action.payload,
+      };
+    case SET_CATEGORIES:
+      return {
+        ...state,
+        categories: action.payload,
       };
     default:
       return state;

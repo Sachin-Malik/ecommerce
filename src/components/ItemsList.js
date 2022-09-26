@@ -1,13 +1,13 @@
-import React, { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import React from "react";
 
 import { Product } from "./Product";
 
 function ItemsList({ products }) {
+  products = products.slice(0, 21);
   return (
-    <div className="row justify-content-evenly">
+    <div className="row my-5 justify-content-evenly">
       {products.map((item) => (
-        <Product item={item} />
+        <Product key={item.id} item={item} />
       ))}
     </div>
   );

@@ -1,3 +1,17 @@
 .myItem{
   border: none;
 }
+
+.category_image{
+  width: 120px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.searchBarComp{
+  background-color: #2874f0;
+}
+
+.catergory_section{
+   box-shadow: 0px 3px 0px 0px lightcoral;
+}

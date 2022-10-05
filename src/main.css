@@ -15,3 +15,13 @@
 .catergory_section{
    box-shadow: 0px 3px 0px 0px lightcoral;
 }
+
+.price-text{
+  font-weight: 600;
+}
+
+.cart-product-image{
+  width: 20%;
+  border-radius: 10%;
+  /* height: 50%; */
+}

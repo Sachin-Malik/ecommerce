@@ -9,9 +9,9 @@ function CatergorySection() {
     dispatch(asyncFetchCategories());
   }, [dispatch]);
 
-  var categories = useSelector((state) => state.categories);
+  var categories = useSelector((state) => state.items.categories);
   console.log(categories);
-  categories = categories.slice(0, 8);
+  categories = categories.slice(0, 7);
 
   return (
     <div className="row shadow-lg p-3 mb-5 justify-content-center">

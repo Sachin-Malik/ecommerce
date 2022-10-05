@@ -1,10 +1,19 @@
 import React from "react";
+import { Link, BrowserRouter } from "react-router-dom";
 
 function TopNavItem({ itemName }) {
   return (
-    <div className="col-auto" style={{ color: "white", fontWeight: 600 }}>
-      {itemName}
-    </div>
+    <BrowserRouter>
+      <div className="col-auto">
+        <Link
+          style={{ color: "white", fontWeight: 600, textDecoration: "none" }}
+          to={itemName}
+          reloadDocument={true}
+        >
+          {itemName}
+        </Link>
+      </div>
+    </BrowserRouter>
   );
 }
 
